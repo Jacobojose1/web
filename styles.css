@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000033;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6b00;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.hero-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 60%);
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.btn-ver {
+  background-color: #b05027;
+  color: white;
+}
+
+.btn-agendar {
+  background-color: #009688;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* --- SERVICES SECTION --- */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.services h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #d32f2f;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #ddd;
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* --- STORE SECTION (PC: Grid normal) --- */
+.store {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.store h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.store h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #d32f2f;
+}
+
+.store-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.store-card {
+  background-color: #ddd;
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.store-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.store-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Imágenes de productos */
+.product-image {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.product-image img:hover {
+  transform: scale(1.05);
+}
+
+.btn-comprar {
+  background-color: #b61711;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #a00;
+}
+
+/* --- ABOUT SECTION --- */
+.about {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.about h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #d32f2f;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/* --- CONTACT FORM --- */
+.contact {
+  background-color: #33406e;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #333;
+  font-size: 1rem;
+}
+
+textarea.form-control {
+  min-height: 120px;
+}
+
+.btn-enviar {
+  background-color: #2196f3;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #1976d2;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .icon {
+  margin-right: 5px;
+}
+
+/* --- WHATSAPP BUTTON --- */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  z-index: 1000;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+/* --- SCROLL SUAVE --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===================================================================
+   MEDIA QUERIES: Solo en móviles (< 769px)
+   =================================================================== */
+
+@media (max-width: 768px) {
+  /* --- HERO BUTTONS: Subir botones ~0.5 cm --- */
+  .hero-buttons {
+    transform: translate(-50%, 35%) !important;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero img {
+    max-width: 350px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+  /* Ajustes generales */
+  .services,
+  .store,
+  .about,
+  .contact {
+    padding: 40px 15px;
+  }
+
+  .services h2,
+  .store h2,
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .services h2::after,
+  .store h2::after,
+  .about h2::after {
+    width: 80px;
+    bottom: -8px;
+  }
+
+  /* --- SERVICIOS: Grid 2x3 --- */
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    padding: 15px;
+  }
+
+  .card h3,
+  .store-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .card p,
+  .store-card p {
+    font-size: 0.9rem;
+  }
+
+  /* --- TIENDA: Carrusel en móvil --- */
+  .store-cards {
+    display: none;
+  }
+
+  .store-carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .store-carousel {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.4s ease;
+    padding: 10px 0;
+    width: max-content;
+  }
+
+  .store-card {
+    min-width: 260px;
+    max-width: 260px;
+    flex: 0 0 auto;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .product-image {
+    height: 120px;
+  }
+
+  .btn-comprar {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  /* Botones del carrusel */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #b61711;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .prev-btn {
+    left: 10px;
+    right: auto;
+  }
+
+  .next-btn {
+    right: 10px;
+    left: auto;
+  }
+
+  .carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* --- ABOUT --- */
+  .about {
+    font-size: 1rem;
+  }
+
+  /* --- FORMULARIO --- */
+  .form-control {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .btn-enviar {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    font-size: 0.9rem;
+    padding: 25px 20px;
+  }
+
+  /* --- WHATSAPP BUTTON --- */
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.3rem;
+  }
+}
+
+/* Ocultar botones de carrusel en PC */
+@media (min-width: 769px) {
+  .store-carousel-container,
+  .carousel-btn {
+    display: none !important;
+  }
+}
