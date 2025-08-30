@@ -71,74 +71,15 @@
 <section id="tienda" class="store">
   <h2>Tienda de Repuestos</h2>
 
-  <!-- Contenedor para PC: Grid normal -->
-  <div class="store-cards">
-    <div class="store-card">
-      <div class="product-image">
-        <img src="Batería 12V 60Ah.jpg" alt="Batería 12V 60Ah" />
-      </div>
-      <h3>Batería 12V 60Ah</h3>
-      <p>Alta duración y arranque en frío garantizado.</p>
-      <a href="https://wa.me/5491130114206?text=Hola,%20quiero%20comprar%20una%20batería%2012V%2060Ah" target="_blank" class="btn-comprar">comprar</a>
-    </div>
-
-    <div class="store-card">
-      <div class="product-image">
-        <img src="filtro de aceite.jpg" alt="Filtro de Aceite Premium" />
-      </div>
-      <h3>Filtro de Aceite Premium</h3>
-      <p>Compatible con vehículos europeos y japoneses.</p>
-      <a href="https://wa.me/5491130114206?text=Hola,%20quiero%20comprar%20un%20filtro%20de%20aceite%20premium" target="_blank" class="btn-comprar">comprar</a>
-    </div>
-
-    <div class="store-card">
-      <div class="product-image">
-        <img src="pastillas delanteras.jpg" alt="Pastillas de Freno Delanteras" />
-      </div>
-      <h3>Pastillas de Freno Delanteras</h3>
-      <p>Juego completo para frenos de alto rendimiento.</p>
-      <a href="https://wa.me/5491130114206?text=Hola,%20quiero%20comprar%20pastillas%20de%20freno%20delanteras" target="_blank" class="btn-comprar">comprar</a>
-    </div>
+  <!-- Buscador -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Buscar repuestos... (ej: batería, filtro, freno)" />
   </div>
 
-  <!-- Contenedor para móvil: Carrusel -->
-  <div class="store-carousel-container">
-    <button class="carousel-btn prev-btn" id="prevBtn">←</button>
-
-    <div class="store-carousel" id="storeCarousel">
-      <!-- Copia de los mismos productos para móvil -->
-      <div class="store-card">
-        <div class="product-image">
-          <img src="Batería 12V 60Ah.jpg" alt="Batería 12V 60Ah" />
-        </div>
-        <h3>Batería 12V 60Ah</h3>
-        <p>Alta duración y arranque en frío garantizado.</p>
-        <a href="https://wa.me/5491130114206?text=Hola,%20quiero%20comprar%20una%20batería%2012V%2060Ah" target="_blank" class="btn-comprar">comprar</a>
-      </div>
-
-      <div class="store-card">
-        <div class="product-image">
-          <img src="filtro de aceite.jpg" alt="Filtro de Aceite Premium" />
-        </div>
-        <h3>Filtro de Aceite Premium</h3>
-        <p>Compatible con vehículos europeos y japoneses.</p>
-        <a href="https://wa.me/5491130114206?text=Hola,%20quiero%20comprar%20un%20filtro%20de%20aceite%20premium" target="_blank" class="btn-comprar">comprar</a>
-      </div>
-
-      <div class="store-card">
-        <div class="product-image">
-          <img src="pastillas delanteras.jpg" alt="Pastillas de Freno Delanteras" />
-        </div>
-        <h3>Pastillas de Freno Delanteras</h3>
-        <p>Juego completo para frenos de alto rendimiento.</p>
-        <a href="https://wa.me/5491130114206?text=Hola,%20quiero%20comprar%20pastillas%20de%20freno%20delanteras" target="_blank" class="btn-comprar">comprar</a>
-      </div>
-    </div>
-
-    <button class="carousel-btn next-btn" id="nextBtn">→</button>
+  <!-- Aquí se cargarán los productos -->
+  <div id="store-container">
   </div>
 </section>
-
   
 
   <!-- About Section (parte de "Sobre nosotros", no necesita anclaje aparte) -->
@@ -185,5 +126,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
