@@ -240,6 +240,32 @@ nav a:hover {
 .btn-comprar:hover {
   background-color: #a00;
 }
+/* === BUSCADOR DE PRODUCTOS === */
+.search-container {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#searchInput:focus {
+  border-color: #009688;
+  box-shadow: 0 0 8px rgba(0, 150, 136, 0.3);
+}
+
+#searchInput::placeholder {
+  color: #aaa;
+}
 
 /* --- ABOUT SECTION --- */
 .about {
@@ -558,6 +584,4 @@ html {
   .carousel-btn {
     display: none !important;
   }
-
 }
-
