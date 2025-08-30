@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "nombre": "Batería 12V 60Ah",
+    "precio": 100000,
+    "stock": 50,
+    "imagen": "Batería 12V 60Ah.jpg",
+    "descripcion": "Alta duración y arranque en frío garantizado."
+  },
+  {
+    "id": 2,
+    "nombre": "Filtro de Aceite Premium",
+    "precio": 8500,
+    "stock": 8,
+    "imagen": "filtro de aceite.jpg",
+    "descripcion": "Compatible con vehículos europeos y japoneses."
+  },
+  {
+    "id": 3,
+    "nombre": "Pastillas de Freno Delanteras",
+    "precio": 12000,
+    "stock": 5,
+    "imagen": "pastillas delanteras.jpg",
+    "descripcion": "Juego completo para frenos de alto rendimiento."
+  },
+  {
+    "id": 4,
+    "nombre": "discos de Freno Delanteras",
+    "precio": 80000,
+    "stock": 10,
+    "imagen": "4.jpeg",
+    "descripcion": "Juego completo de discos  de frenos de alto rendimiento."
+  },
+  {
+    "id": 5,
+    "nombre": "amortiguadores Delanteras",
+    "precio": 120000,
+    "stock": 6,
+    "imagen": "3.jpeg",
+    "descripcion": "Juego completo de amortiguadores de alto rendimiento."
+  },
+  {
+    "id": 6,
+    "nombre": "cables y bujias",
+    "precio": 80000,
+    "stock": 10,
+    "imagen": "2.jpeg",
+    "descripcion": "Juego completo de cables y bugias."
+  }
+  
+]
